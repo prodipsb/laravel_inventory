@@ -39,7 +39,7 @@
     <div class="col-md-2">
         <button type="submit" class="btn btn-primary">Search</button>
         <a href="{{ route('products.index') }}" class="btn btn-secondary">Reset</a>
-        <a href="{{ route('products.export') }}" class="btn btn-success">Export CSV</a>
+        <a href="{{route('myproducts.export') }}" class="btn btn-success">Export CSV</a>
     </div>
 </form>
 

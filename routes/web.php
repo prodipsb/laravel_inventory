@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ProductExportController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -18,3 +19,5 @@ Route::get('/home', function () {
 
 Route::resource('categories', CategoryController::class);
 Route::resource('products', ProductController::class);
+
+Route::get('/myproducts/export', [ProductExportController::class, 'export'])->name('myproducts.export');
